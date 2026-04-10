@@ -17,4 +17,4 @@ def test_multiplicar():
     response = client.get("/multiplicar/2/2")
     assert response.status_code == 200
     # ERRO PROPOSITAL: 2 * 2 é 4, mas vamos dizer que esperamos 5
-    assert response.json() == {"resultado": 5}
+    assert response.json() == {"resultado": 4}
